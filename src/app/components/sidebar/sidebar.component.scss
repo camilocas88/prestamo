@@ -1,0 +1,81 @@
+.nav-lateral {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    transition: all 0.2s ease-in-out;
+    background-image: url(../../../assets/images/nav-font.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 100%;
+  
+    &-content {
+      height: 100%;
+      background-color: rgba(36, 41, 46, 0.8);
+    }
+  
+    &-avatar {
+      padding: 40px 0;
+  
+      img {
+        width: 50%;
+        margin: 0 auto;
+        display: block;
+        border: 4px solid #fff;
+        border-radius: 100%;
+      }
+  
+      figcaption {
+        margin-top: 20px;
+        color: #fff;
+      }
+    }
+  
+    &-bar {
+      height: 3px;
+      background-color: #ec5252;
+    }
+  
+    &-menu {
+      height: auto;
+  
+      ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+  
+        li {
+          width: 100%;
+          height: auto;
+  
+          a {
+            display: block;
+            width: 100%;
+            height: 45px;
+            line-height: 45px;
+            text-decoration: none;
+            color: #fff;
+            font-size: 17px;
+            box-sizing: border-box;
+            padding-left: 20px;
+            transition: all 0.2s ease-in-out;
+          }
+        }
+      }
+    }
+  }
+  .mCustomScrollBox {
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+    max-width: 100%;
+    outline: none;
+    direction: ltr;
+  }
+  
+  .mCSB_container {
+    overflow: hidden;
+    width: auto;
+    height: auto;
+  }
+  

@@ -1,0 +1,73 @@
+<div class="jumbotron text-center">
+  <h1 class="display-4">PRÉSTAMOS ONLINE</h1>
+  <hr class="my-4" />
+  <div class="card text-dark">
+    <div class="card-body">
+      <form (ngSubmit)="onSubmit()" [formGroup]="currentUser">
+        <div class="form-group">
+          <div class="d-flex align-items-center justify-content-between w-100">
+            <b>Solicitas</b>
+            <b id="MontoDinero" class="box-violet">{{ currentUser.controls['valueLoan'].value | currency:'COP':'symbol-narrow':'4.0-2' }} </b>
+          </div>
+          <input
+            type="range"
+            min="10000"
+            max="100000"
+            step="1"
+            formControlName="valueLoan"
+            class="form-control p-0 mt-3"
+          />
+        </div>
+        <div class="row">
+          <div class="col">
+            <div class="form-group">
+              <label for="my-input">Nombre</label>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Nombre"
+                formControlName="name"
+              />
+            </div>
+          </div>
+          <div class="col">
+            <div class="form-group">
+              <label for="my-input">Correo</label>
+              <input
+                type="email"
+                class="form-control"
+                placeholder="@correo"
+                formControlName="email"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div class="form-group">
+              <label for="my-input">Cédula</label>
+              <input
+                type="number"
+                class="form-control"
+                placeholder="cc"
+                formControlName="cc"
+              />
+            </div>
+          </div>
+          <div class="col">
+            <div class="form-group">
+              <label for="my-input">Fecha de Pago</label>
+              <input type="date" class="form-control" formControlName="DatePayment" />
+            </div>
+          </div>
+        </div>
+        <div class="col-auto my-1">
+          <button [disabled]="!currentUser.valid" type="submit" class="btn btn-lg btn-block btn-success">
+            Enviar
+          </button>
+        </div>
+      </form>
+      {{ currentUser.status }}
+    </div>
+  </div>
+</div>

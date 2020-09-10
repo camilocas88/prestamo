@@ -1,0 +1,73 @@
+{
+  "User": [
+    {
+      "name": "Camilo",
+      "email": "camilo@mail.com",
+      "cc": 1016007889,
+      "valueLoan": "",
+      "DatePayment": "2020-09-29",
+      "creditStatus": "rechazado",
+      "creditPayment": "no",
+      "id": 1
+    },
+    {
+      "name": "alexandra",
+      "email": "ale@mail.com",
+      "cc": 1020735311,
+      "valueLoan": "",
+      "DatePayment": "2020-09-30",
+      "creditStatus": "rechazado",
+      "creditPayment": "no",
+      "id": 2
+    },
+    {
+      "name": "Nicolas",
+      "email": "nico@mail.com",
+      "cc": 9338220181,
+      "valueLoan": "",
+      "DatePayment": "2020-10-01",
+      "creditStatus": "rechazado",
+      "creditPayment": "no",
+      "id": 3
+    },
+    {
+      "name": "santiago",
+      "email": "santi@mail.com",
+      "cc": 15151845154,
+      "valueLoan": "",
+      "DatePayment": "2020-09-30",
+      "creditStatus": "aprobado",
+      "creditPayment": "no",
+      "id": 4
+    },
+    {
+      "name": "juan",
+      "email": "j@mail.com",
+      "cc": 4845158154,
+      "valueLoan": "",
+      "DatePayment": "2020-09-30",
+      "creditStatus": "rechazado",
+      "creditPayment": "no",
+      "id": 5
+    },
+    {
+      "name": "andres",
+      "email": "a@mail.com",
+      "cc": 11111111111,
+      "valueLoan": "",
+      "DatePayment": "2020-09-30",
+      "creditStatus": "aprobado",
+      "creditPayment": "si",
+      "id": 6
+    },
+    {
+      "name": "juan",
+      "email": "j@mail.com",
+      "cc": 11111111111,
+      "valueLoan": "",
+      "DatePayment": "2020-09-30",
+      "creditPayment": "no",
+      "id": 7
+    }
+  ]
+}

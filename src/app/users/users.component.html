@@ -1,0 +1,26 @@
+<table class="table table-hover">
+  <tr>
+    <td class="font-weight-bold">Cédula</td>
+    <td class="font-weight-bold">Nombre</td>
+    <td class="font-weight-bold">Correo</td>
+    <td class="font-weight-bold">Valor Solicitado</td>
+    <td class="font-weight-bold">Fecha</td>
+    <td class="font-weight-bold">Estado</td>
+    <td class="font-weight-bold">Pagado</td>
+  </tr>
+  <tr *ngFor="let user of allUser">
+    <td>{{ user.cc }}</td>
+    <td>{{ user.name }}</td>
+    <td>{{ user.email }}</td>
+    <td>{{ user.valueLoan | currency: "COP":"symbol-narrow":"4.0-2" }}</td>
+    <td>{{ user.DatePayment }}</td>
+    <td>{{ user.creditStatus }}</td>
+    <td>{{ user.creditPayment }}</td>
+   
+    <td>
+      <a class="btn text-danger" (click)="deleteUser(user.id)">
+        <i class="fa fa-trash"></i>
+      </a>
+    </td>
+  </tr>
+</table>
